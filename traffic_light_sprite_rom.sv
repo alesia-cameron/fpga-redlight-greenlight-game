@@ -8,6 +8,7 @@ Outputs:  pixel
 
 Description: traffic Light Sprite ROM 40x40 pixel
  */
+
 module traffic_light_sprite_rom (
     input logic [5:0] sprite_x,  // 0-39 (40 pixels wide)
     input logic [5:0] sprite_y,  // 0-39 (40 pixels tall)
