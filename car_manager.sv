@@ -16,8 +16,6 @@ Player moves faster than AI cars. When new round starts, all cars
 reset to starting line on left of screen. Rate limiting prevents cars 
 from moving too fast by only updating positions every few milliseconds. 
 AI cars use random values to decide when to move forward/change lanes  
-
-
 */
 
 module car_manager (
@@ -62,7 +60,6 @@ module car_manager (
     //stores previous state of movement inputs for edge detection, detect when button first pressed versus held down
     logic move_forward_prev, move_up_prev, move_down_prev;
     logic move_forward_edge, move_up_edge, move_down_edge;
-    
     
 	 //remembers if game active last cycle to detect transition from inactive to active, new round starting
     logic game_active_prev;
@@ -196,4 +193,5 @@ module car_manager (
             end
         end
     end
+
 endmodule 
