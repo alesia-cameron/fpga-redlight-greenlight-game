@@ -26,7 +26,6 @@ on/pixel off. Module uses synchronous read, address loads on rising clock,
 bitmap row appears next cycle
 */
 
-
 module char_rom (
     input logic clk,
     input logic [7:0] char_code,  // ASCII character code (0-127)
@@ -44,6 +43,4 @@ module char_rom (
         .clock(clk),   
         .q(pixels)  //8bit output
     );
-    
 endmodule //char_rom
-
