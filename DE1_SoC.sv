@@ -20,7 +20,6 @@ on car positions, traffic light state, and game status
 */
 
 module DE1_SoC (
-
     input CLOCK_50,
     input [3:0] KEY,
     input [9:0] SW,
@@ -32,7 +31,7 @@ module DE1_SoC (
    
     //reset key 0, active low 
     logic reset;
-     assign reset = ~KEY[0];
+    assign reset = ~KEY[0];
    
     //lfsr generates random numbers for ai behavior and traffic light times
     //outputs 16 bit random val every clock cycle
@@ -107,8 +106,7 @@ module DE1_SoC (
         .moved(player_moved)
     );
    
-    
-	 //game controller main state machine
+	//game controller main state machine
     //track scores, manages rounds, checks for winner
     //disqualifies player if move during red light
     logic [3:0] player_score, ai1_score, ai2_score, ai3_score;
@@ -151,7 +149,7 @@ module DE1_SoC (
    
     //remaining hex show four player scores
     //hex0 shows player ones digit, hex1 shows player tens digit
-     //hex2 shows ai1 score, hex3 shows ai2 score, hex4 shows ai3 score
+    //hex2 shows ai1 score, hex3 shows ai2 score, hex4 shows ai3 score
     
     //func converts 4 bit # into 7seg display 
     //bit pattern lights up to form digit shape
@@ -188,12 +186,10 @@ module DE1_SoC (
     //x and y show which pixel currently being drawn
     logic [9:0] x;
     logic [8:0] y;
-   
     
-	 //draw controller outputs rgb colors for current scan position
+	//draw controller outputs rgb colors for current scan position
     //colors change based on what needs to be drawn at current x,y location
     logic [7:0] r, g, b;
-   
    
 	//video driver module scans screen 
     //provides current x,y coordinates to draw controller
@@ -251,5 +247,5 @@ module DE1_SoC (
         .g(g),
          .b(b)
     );
-   
+
 endmodule //DE1_SoC
