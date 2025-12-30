@@ -9,10 +9,7 @@ Outputs: red, green
 Description: testbench for movement_detector module verifies detection of position changes
 */
 
-
-
 module tb_movement_detector();
-    
     //control signals
     logic clk;
     logic reset;
@@ -58,8 +55,7 @@ module tb_movement_detector();
         @(posedge clk);
         assert(moved == 1) else $error("should detect x movement");
         
-        
-		  $display("test 3: y movement");
+		$display("test 3: y movement");
         //change y position then check next cycle
         @(posedge clk);
         current_y = 9'd100;
@@ -83,5 +79,4 @@ module tb_movement_detector();
         $display("all tests pass");
         $stop;
     end
-    
 endmodule
