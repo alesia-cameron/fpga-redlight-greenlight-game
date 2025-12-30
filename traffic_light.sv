@@ -14,9 +14,7 @@ While timer counts down, light stays in current color.
 The present state holds whichever color is active, next state decides 
 where to go when timer expires. Outputs reflect what the current state is. 
 Keeps trafic light changing in unpredictable intervals when countdown finishes
-
 */
-
 
 module traffic_light (
     input logic clk,
@@ -75,5 +73,5 @@ module traffic_light (
     
     assign red = (ps == red_light);
     assign green = (ps == green_light);
-	 
+
 endmodule //traffic_light.sv
