@@ -11,7 +11,6 @@ behavior. Clk toggles every 5 time signals, reset is asserted high
 initially, forcing LFSR output to known seed, ensuring a deterministic
 starting state not zeros. After 20 time units reset is deasserted which
 allows lfsr to shift.
-
 */
 
 //====================Test Bench=============================
@@ -19,7 +18,6 @@ module tb_lfsr;
   logic clk;
   logic reset;
   logic [3:0] out;
-
 
   lfsr dut(
     .clk(clk),
@@ -32,7 +30,6 @@ module tb_lfsr;
     forever #5 clk = ~clk;   
   end
 
- 
   initial begin
     reset = 1;
     #20;           
@@ -48,6 +45,4 @@ module tb_lfsr;
   begin
     $display("Time=%0t  LFSR=%b", $time, out);
   end
-
 endmodule
-
