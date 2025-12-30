@@ -13,12 +13,10 @@ transparent. Defines car shape row by row using comb logic that checks
 coordinate ranges. Creates car silhouette. Used by graphics controller to 
 draw four racing cars on screen by sampling different positions within 
 sprite pattern 
-
-
 */
 
-/* Car Sprite ROM 30x30 pixel car combinational logic instead of initial blocks for FPGA synthesis
- */
+/* Car Sprite ROM 30x30 pixel car combinational logic instead of initial blocks for FPGA synthesis */
+
 module car_sprite_rom (
     input logic [4:0] sprite_x, //horizontal pixel position sprite from 0 to 29
     input logic [4:0] sprite_y,  //vertical pixel position sprite from 0 to 29
@@ -162,5 +160,4 @@ module car_sprite_rom (
             default: pixel = 1'b0;
         endcase
    end
-    
 endmodule
