@@ -1,0 +1,423 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions
+-- and other software and tools, and its AMPP partner logic
+-- functions, and any output files from any of the foregoing
+-- (including device programming or simulation files), and any
+-- associated documentation or information are expressly subject
+-- to the terms and conditions of the Intel Program License
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel MegaCore Function License Agreement, or other
+-- applicable license agreement, including, without limitation,
+-- that your use is for the sole purpose of programming logic
+-- devices manufactured by Intel and sold by Intel or its
+-- authorized distributors.  Please refer to the applicable
+-- agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+-- Character ROM Memory Initialization File
+-- 8x8 pixel font for ASCII characters
+-- Address = char_code * 8 + row
+
+DEPTH = 1024;
+WIDTH = 8;
+ADDRESS_RADIX = DEC;
+DATA_RADIX = HEX;
+
+CONTENT
+BEGIN
+
+-- Initialize all to 00 (blank)
+[0..1023] : 00;
+
+-- Space (32) - ASCII 32, addresses 256-263
+256 : 00;
+257 : 00;
+258 : 00;
+259 : 00;
+260 : 00;
+261 : 00;
+262 : 00;
+263 : 00;
+
+-- '0' (48) - ASCII 48, addresses 384-391
+384 : 3C;
+385 : 66;
+386 : 66;
+387 : 66;
+388 : 66;
+389 : 66;
+390 : 3C;
+391 : 00;
+
+-- '1' (49) - ASCII 49, addresses 392-399
+392 : 18;
+393 : 38;
+394 : 18;
+395 : 18;
+396 : 18;
+397 : 18;
+398 : 3C;
+399 : 00;
+
+-- '2' (50) - ASCII 50, addresses 400-407
+400 : 3C;
+401 : 66;
+402 : 06;
+403 : 0C;
+404 : 30;
+405 : 60;
+406 : 7E;
+407 : 00;
+
+-- '3' (51) - ASCII 51, addresses 408-415
+408 : 3C;
+409 : 66;
+410 : 06;
+411 : 1C;
+412 : 06;
+413 : 66;
+414 : 3C;
+415 : 00;
+
+-- ':' (58) - ASCII 58, addresses 464-471
+464 : 00;
+465 : 00;
+466 : 18;
+467 : 18;
+468 : 00;
+469 : 18;
+470 : 18;
+471 : 00;
+
+-- 'A' (65) - ASCII 65, addresses 520-527
+520 : 3C;
+521 : 66;
+522 : 66;
+523 : 7E;
+524 : 66;
+525 : 66;
+526 : 66;
+527 : 00;
+
+-- 'D' (68) - ASCII 68, addresses 544-551
+544 : 78;
+545 : 6C;
+546 : 66;
+547 : 66;
+548 : 66;
+549 : 6C;
+550 : 78;
+551 : 00;
+
+-- 'E' (69) - ASCII 69, addresses 552-559
+552 : 7E;
+553 : 60;
+554 : 60;
+555 : 7C;
+556 : 60;
+557 : 60;
+558 : 7E;
+559 : 00;
+
+-- 'G' (71) - ASCII 71, addresses 568-575
+568 : 3C;
+569 : 66;
+570 : 60;
+571 : 6E;
+572 : 66;
+573 : 66;
+574 : 3C;
+575 : 00;
+
+-- 'H' (72) - ASCII 72, addresses 576-583
+576 : 66;
+577 : 66;
+578 : 66;
+579 : 7E;
+580 : 66;
+581 : 66;
+582 : 66;
+583 : 00;
+
+-- 'I' (73) - ASCII 73, addresses 584-591
+584 : 7E;
+585 : 18;
+586 : 18;
+587 : 18;
+588 : 18;
+589 : 18;
+590 : 7E;
+591 : 00;
+
+-- 'K' (75) - ASCII 75, addresses 600-607
+600 : 66;
+601 : 6C;
+602 : 78;
+603 : 70;
+604 : 78;
+605 : 6C;
+606 : 66;
+607 : 00;
+
+-- 'L' (76) - ASCII 76, addresses 608-615
+608 : 60;
+609 : 60;
+610 : 60;
+611 : 60;
+612 : 60;
+613 : 60;
+614 : 7E;
+615 : 00;
+
+-- 'M' (77) - ASCII 77, addresses 616-623
+616 : 63;
+617 : 77;
+618 : 7F;
+619 : 6B;
+620 : 63;
+621 : 63;
+622 : 63;
+623 : 00;
+
+-- 'N' (78) - ASCII 78, addresses 624-631
+624 : 63;
+625 : 73;
+626 : 7B;
+627 : 6F;
+628 : 67;
+629 : 63;
+630 : 63;
+631 : 00;
+
+-- 'O' (79) - ASCII 79, addresses 632-639
+632 : 3C;
+633 : 66;
+634 : 66;
+635 : 66;
+636 : 66;
+637 : 66;
+638 : 3C;
+639 : 00;
+
+-- 'P' (80) - ASCII 80, addresses 640-647
+640 : 7C;
+641 : 66;
+642 : 66;
+643 : 7C;
+644 : 60;
+645 : 60;
+646 : 60;
+647 : 00;
+
+-- 'R' (82) - ASCII 82, addresses 656-663
+656 : 7C;
+657 : 66;
+658 : 66;
+659 : 7C;
+660 : 78;
+661 : 6C;
+662 : 66;
+663 : 00;
+
+-- 'S' (83) - ASCII 83, addresses 664-671
+664 : 3C;
+665 : 66;
+666 : 60;
+667 : 3C;
+668 : 06;
+669 : 66;
+670 : 3C;
+671 : 00;
+
+-- 'T' (84) - ASCII 84, addresses 672-679
+672 : 7E;
+673 : 18;
+674 : 18;
+675 : 18;
+676 : 18;
+677 : 18;
+678 : 18;
+679 : 00;
+
+-- 'V' (86) - ASCII 86, addresses 688-695
+688 : 63;
+689 : 63;
+690 : 63;
+691 : 63;
+692 : 36;
+693 : 1C;
+694 : 08;
+695 : 00;
+
+-- 'W' (87) - ASCII 87, addresses 696-703
+696 : 63;
+697 : 63;
+698 : 63;
+699 : 6B;
+700 : 7F;
+701 : 77;
+702 : 63;
+703 : 00;
+
+-- 'Y' (89) - ASCII 89, addresses 712-719
+712 : 66;
+713 : 66;
+714 : 66;
+715 : 3C;
+716 : 18;
+717 : 18;
+718 : 18;
+719 : 00;
+
+-- 'a' (97) - ASCII 97, addresses 776-783
+776 : 00;
+777 : 00;
+778 : 3C;
+779 : 06;
+780 : 3E;
+781 : 66;
+782 : 3E;
+783 : 00;
+
+-- 'c' (99) - ASCII 99, addresses 792-799
+792 : 00;
+793 : 00;
+794 : 3C;
+795 : 66;
+796 : 60;
+797 : 66;
+798 : 3C;
+799 : 00;
+
+-- 'e' (101) - ASCII 101, addresses 808-815
+808 : 00;
+809 : 00;
+810 : 3C;
+811 : 66;
+812 : 7E;
+813 : 60;
+814 : 3C;
+815 : 00;
+
+-- 'g' (103) - ASCII 103, addresses 824-831
+824 : 00;
+825 : 00;
+826 : 3E;
+827 : 66;
+828 : 66;
+829 : 3E;
+830 : 06;
+831 : 3C;
+
+-- 'h' (104) - ASCII 104, addresses 832-839
+832 : 60;
+833 : 60;
+834 : 7C;
+835 : 66;
+836 : 66;
+837 : 66;
+838 : 66;
+839 : 00;
+
+-- 'i' (105) - ASCII 105, addresses 840-847
+840 : 18;
+841 : 00;
+842 : 38;
+843 : 18;
+844 : 18;
+845 : 18;
+846 : 3C;
+847 : 00;
+
+-- 'k' (107) - ASCII 107, addresses 856-863
+856 : 60;
+857 : 60;
+858 : 66;
+859 : 6C;
+860 : 78;
+861 : 6C;
+862 : 66;
+863 : 00;
+
+-- 'l' (108) - ASCII 108, addresses 864-871
+864 : 38;
+865 : 18;
+866 : 18;
+867 : 18;
+868 : 18;
+869 : 18;
+870 : 3C;
+871 : 00;
+
+-- 'n' (110) - ASCII 110, addresses 880-887
+880 : 00;
+881 : 00;
+882 : 7C;
+883 : 66;
+884 : 66;
+885 : 66;
+886 : 66;
+887 : 00;
+
+-- 'o' (111) - ASCII 111, addresses 888-895
+888 : 00;
+889 : 00;
+890 : 3C;
+891 : 66;
+892 : 66;
+893 : 66;
+894 : 3C;
+895 : 00;
+
+-- 'p' (112) - ASCII 112, addresses 896-903
+896 : 00;
+897 : 00;
+898 : 5C;
+899 : 66;
+900 : 66;
+901 : 7C;
+902 : 60;
+903 : 60;
+
+-- 'r' (114) - ASCII 114, addresses 912-919
+912 : 00;
+913 : 00;
+914 : 5C;
+915 : 66;
+916 : 60;
+917 : 60;
+918 : 60;
+919 : 00;
+
+-- 's' (115) - ASCII 115, addresses 920-927
+920 : 00;
+921 : 00;
+922 : 3E;
+923 : 60;
+924 : 3C;
+925 : 06;
+926 : 7C;
+927 : 00;
+
+-- 't' (116) - ASCII 116, addresses 928-935
+928 : 18;
+929 : 18;
+930 : 7E;
+931 : 18;
+932 : 18;
+933 : 18;
+934 : 0E;
+935 : 00;
+
+-- 'y' (121) - ASCII 121, addresses 968-975
+968 : 00;
+969 : 00;
+970 : 66;
+971 : 66;
+972 : 66;
+973 : 3E;
+974 : 06;
+975 : 3C;
+
+END;
