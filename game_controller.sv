@@ -19,7 +19,6 @@ disqualifies them from that round, keeps track of scores and rounds
 and decides when game over
 */
 
-
 module game_controller (
     input logic clk,             
     input logic reset,               
@@ -69,7 +68,6 @@ module game_controller (
     //round_delay, 100 million cycles at 50MHz = 2 seconds, gives players time to see who won before next round
     parameter round_delay = 27'd100_000_000;
     
-	 
     //reset_delay creates pause when cars return to start
     //2.5 million cycles equals 0.05 seconds prevents false finish line detection 
     parameter reset_delay = 27'd2_500_000;
@@ -77,7 +75,6 @@ module game_controller (
     //round_winner_recorded prevents multiple cars from getting points in same round
     //once high, no more finish line checks happen this round
     logic round_winner_recorded;
-    
 	 
     //player_disqualified remembers if player moved during red light
     //once set high player cannot win current round even if crosses finish
@@ -279,7 +276,7 @@ module game_controller (
     //modulo 2 gives 0,1,0,1 pattern creating on/off toggle
     //equals 0 means visible, equals 1 means hidden
     //result is car flashes twice (on/off and on/off) over 0.5 s when disqualified
-    	 assign player_blink = player_disqualified && (delay_counter < 27'd25_000_000) && 
+    assign player_blink = player_disqualified && (delay_counter < 27'd25_000_000) && 
                           (((delay_counter / 27'd12_500_000) % 2) == 0);
-    
+
 endmodule //end game_controller
