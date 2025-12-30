@@ -12,12 +12,9 @@ Clock toggles every 5 time units.
 reset initializes module, game_active starts counting. 
 LFSR_in initially 3, incremented by 7 each time duration_timer reaches 0 and 
 duration changes. prev_duration prevents repeated prints for same duration
-
 */
 
-
 module tb_traffic_light;
- 
     logic clk;
     logic reset;
     logic game_active;
